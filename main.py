@@ -1,10 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello, world. How are you?"
+    return render_template("home.html")
 
 @app.route("/max")
 def max():
