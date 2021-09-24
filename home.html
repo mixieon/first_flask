@@ -5,8 +5,12 @@
         <title>Hello World in Flask</title>
     </head>
     <body>
+
+        {% extends "template.html" %}
+        {% block content %}
         <h1> Learning flask, python, and git at the same time.</h1>
         <p>I am currently really enjoying it. It's fun to sit and try to figure out where I went wrong in my code.</p>
 
+        {% endblock %}
     </body>
 </html>
